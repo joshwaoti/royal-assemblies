@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
-import { imageAssignments, upcomingEvents } from "@/lib/data";
+import { sectionImages, upcomingEvents } from "@/lib/data";
 
 export default function EventsPage() {
   return (
@@ -8,7 +8,7 @@ export default function EventsPage() {
       <PageHero
         copy="The Royal Calendar: services, radio, conferences, and recurring gatherings in the Royal Assembly rhythm."
         eyebrow="Events"
-        imageId={imageAssignments.eventsHero}
+        imageId={sectionImages.eventsHero}
         title={<>Attend / <em>RSVP</em></>}
       />
       <section className="section pt-0">

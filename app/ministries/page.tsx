@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
-import { imageAssignments, ministries } from "@/lib/data";
+import { ministries, sectionImages } from "@/lib/data";
 
 export default function MinistriesPage() {
   return (
@@ -8,7 +8,7 @@ export default function MinistriesPage() {
       <PageHero
         copy="Each ministry arm carries the same vision: building lives by the creative word of God."
         eyebrow="The Five Pillars + Radio"
-        imageId={imageAssignments.ministriesHeader}
+        imageId={sectionImages.ministriesHeader}
         title={<>Join a <em>Ministry</em></>}
       />
       <section className="section pt-0">

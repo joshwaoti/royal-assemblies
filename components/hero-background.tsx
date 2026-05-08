@@ -9,6 +9,8 @@ export function HeroBackground({
   alt: string;
   opacity?: number;
 }) {
+  const src = imageId.startsWith("/") ? imageId : unsplash(imageId);
+
   return (
     <div
       aria-label={alt || undefined}
@@ -17,7 +19,7 @@ export function HeroBackground({
       style={
         {
           "--image-opacity": opacity,
-          backgroundImage: `linear-gradient(90deg, color-mix(in srgb, var(--black) 92%, transparent), color-mix(in srgb, var(--deep) 82%, transparent)), url(${unsplash(imageId)})`
+          backgroundImage: `linear-gradient(90deg, color-mix(in srgb, var(--black) 92%, transparent), color-mix(in srgb, var(--deep) 82%, transparent)), url(${src})`
         } as React.CSSProperties
       }
     />

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Mail, Play } from "lucide-react";
-import { featuredSermons, imageAssignments, ministries, books } from "@/lib/data";
+import { featuredSermons, ministries, books, sectionImages } from "@/lib/data";
 import { HeroBackground } from "@/components/hero-background";
 import { SermonCard } from "@/components/sermon-card";
 import { SocialEmbeds } from "@/components/social-embeds";
@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       <section className="section relative min-h-[calc(100vh-80px)] overflow-hidden">
-        <HeroBackground alt="Atmospheric sanctuary light for Royal Assembly Church" imageId={imageAssignments.homeHero} opacity={0.13} />
+        <HeroBackground alt="Royal Assembly worship team ministering" imageId={sectionImages.homeHero} opacity={0.28} />
         <span className="light-beam left-[14%]" />
         <span className="light-beam right-[18%] opacity-80" />
         <div className="container grid min-h-[calc(100vh-220px)] items-center gap-12 py-12 lg:grid-cols-[1.1fr_0.8fr]">
@@ -113,7 +113,7 @@ export default function HomePage() {
       </section>
 
       <section className="section overflow-hidden">
-        <HeroBackground alt="" imageId={imageAssignments.homeTestimonials} opacity={0.05} />
+        <HeroBackground alt="" imageId={sectionImages.homeTestimonials} opacity={0.11} />
         <div className="container max-w-4xl text-center">
           <p className="eyebrow">Testimonies</p>
           <blockquote className="font-cormorant text-[clamp(2.2rem,6vw,5rem)] italic leading-none text-cream">

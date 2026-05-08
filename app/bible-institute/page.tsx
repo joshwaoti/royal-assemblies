@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
+import { sectionImages } from "@/lib/data";
 
 export default function BibleInstitutePage() {
   return (
@@ -8,6 +9,7 @@ export default function BibleInstitutePage() {
       <PageHero
         copy="The School of the Word: the Bible School arm of Royal Assembly, equipping believers with Christian Bible courses for spiritual growth."
         eyebrow="Word Foundation Bible Institute"
+        imageId={sectionImages.bibleInstitute}
         title={<>The School of the <em>Word</em></>}
       />
       <section className="section pt-0">

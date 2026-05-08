@@ -1,6 +1,6 @@
 import { PageHero } from "@/components/page-hero";
 import { SermonFilterGrid } from "@/components/sermon-filter-grid";
-import { imageAssignments, identity, sermons } from "@/lib/data";
+import { identity, sectionImages, sermons } from "@/lib/data";
 
 export default function SermonsPage() {
   const latest = sermons[0];
@@ -10,7 +10,7 @@ export default function SermonsPage() {
       <PageHero
         copy="Every sermon is a building block. Find yours through the verified Royal Assembly sermon archive."
         eyebrow="The Word Archive"
-        imageId={imageAssignments.sermonsHeader}
+        imageId={sectionImages.sermonsHeader}
         title={<>Watch / <em>Discover</em></>}
       />
       <section className="section pt-0">

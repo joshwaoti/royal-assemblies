@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/page-hero";
-import { imageAssignments, identity, localImages, ministries } from "@/lib/data";
+import { identity, ministries, sectionImages } from "@/lib/data";
 import Image from "next/image";
 
 const timeline = [
@@ -25,7 +25,7 @@ export default function AboutPage() {
               className="object-cover"
               fill
               sizes="(max-width: 1024px) 90vw, 40vw"
-              src={localImages.pastorFavour}
+              src={sectionImages.aboutHero}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <p className="absolute bottom-6 left-6 right-6 m-0 text-muted">
@@ -51,7 +51,7 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="section overflow-hidden bg-[var(--deep)]">
-        <PageBackground imageId={imageAssignments.aboutTimeline} />
+        <PageBackground imageId={sectionImages.aboutTimeline} />
         <div className="container">
           <p className="eyebrow">Timeline</p>
           <h2 className="section-title">Built by the <em>Word</em></h2>
@@ -84,5 +84,5 @@ export default function AboutPage() {
 }
 
 function PageBackground({ imageId }: { imageId: string }) {
-  return <div className="absolute inset-0 -z-10 bg-cover bg-center opacity-[0.04]" style={{ backgroundImage: `url(https://images.unsplash.com/photo-${imageId}?w=1200&q=80&auto=format&fit=crop)` }} />;
+  return <div className="absolute inset-0 -z-10 bg-cover bg-center opacity-[0.1]" style={{ backgroundImage: `url(${imageId})` }} />;
 }

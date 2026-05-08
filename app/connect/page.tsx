@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { PageHero } from "@/components/page-hero";
 import { SocialEmbeds } from "@/components/social-embeds";
-import { identity, imageAssignments, serviceSchedule, socials } from "@/lib/data";
+import { identity, sectionImages, serviceSchedule, socials } from "@/lib/data";
 
 export default function ConnectPage() {
   return (
@@ -9,7 +9,7 @@ export default function ConnectPage() {
       <PageHero
         copy="Enter the Assembly: visit, follow, contact, and stay connected to the ministry rhythm."
         eyebrow="Connect"
-        imageId={imageAssignments.connectHeader}
+        imageId={sectionImages.connectHeader}
         title={<>Enter the <em>Assembly</em></>}
       />
       <section className="section pt-0">

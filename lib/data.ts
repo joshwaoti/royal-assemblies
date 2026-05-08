@@ -108,7 +108,26 @@ export const books = [
 export const localImages = {
   logo: "/images/royal-logo.jpg",
   pastorFavour: "/images/pastor-favour-purple.jpg",
-  pastorFavourLive: "/images/pastor-favour-ig-live.jpg"
+  pastorFavourLive: "/images/pastor-favour-ig-live.jpg",
+  heroWorship: "/images/ra-5.webp",
+  pastorTeaching: "/images/ra-6.webp",
+  congregationLearning: "/images/ra-4.webp",
+  childrenMinistry: "/images/ra-3.webp",
+  prayerMoment: "/images/ra-2.webp",
+  assemblyWide: "/images/ra-1.webp"
+} as const;
+
+export const sectionImages = {
+  homeHero: localImages.heroWorship,
+  homeTestimonials: localImages.prayerMoment,
+  aboutHero: localImages.pastorTeaching,
+  aboutTimeline: localImages.congregationLearning,
+  sermonsHeader: localImages.pastorTeaching,
+  ministriesHeader: localImages.assemblyWide,
+  eventsHero: localImages.childrenMinistry,
+  giveHeader: localImages.prayerMoment,
+  connectHeader: localImages.congregationLearning,
+  bibleInstitute: localImages.congregationLearning
 } as const;
 
 export const imageAssignments = {

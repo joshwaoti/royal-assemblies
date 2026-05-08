@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
-import { givingOptions, imageAssignments } from "@/lib/data";
+import { givingOptions, sectionImages } from "@/lib/data";
 
 export default function GivePage() {
   return (
@@ -8,7 +8,7 @@ export default function GivePage() {
       <PageHero
         copy="The Covenant Partnership: a trust-building, scripture-anchored generosity invitation for the work of the ministry."
         eyebrow="Give & Partner"
-        imageId={imageAssignments.giveHeader}
+        imageId={sectionImages.giveHeader}
         title={<>Give & Build <em>Together</em></>}
       />
       <section className="section pt-0">
