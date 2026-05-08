@@ -1,0 +1,7 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#070410"/>
+  <rect x="88" y="72" width="1104" height="576" rx="12" fill="#11082A" stroke="#C9920A" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M558 282L758 360L558 438V282Z" fill="#C9920A"/>
+  <text x="640" y="530" text-anchor="middle" fill="#E8C45A" font-family="Georgia, serif" font-size="54" font-style="italic">Royal Assembly</text>
+  <text x="640" y="585" text-anchor="middle" fill="#A99CB9" font-family="Arial, sans-serif" font-size="22" letter-spacing="10">THE WORD ARCHIVE</text>
+</svg>
